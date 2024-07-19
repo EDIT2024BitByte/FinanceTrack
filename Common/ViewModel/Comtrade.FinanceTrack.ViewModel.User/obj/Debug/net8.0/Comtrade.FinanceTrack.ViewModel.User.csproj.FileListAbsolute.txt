@@ -1,0 +1,11 @@
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\bin\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.deps.json
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\bin\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.dll
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\bin\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.pdb
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.AssemblyInfoInputs.cache
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.AssemblyInfo.cs
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.csproj.CoreCompileInputs.cache
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.dll
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\refint\Comtrade.FinanceTrack.ViewModel.User.dll
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.pdb
+C:\Projects\EDIT2024\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.User\obj\Debug\net8.0\ref\Comtrade.FinanceTrack.ViewModel.User.dll
