@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+}
+
+.th-icon-size {
+    width: 5%;
+}
+
+.td-icon-size {
+    width: 5%;
+    text-align: center;
+}

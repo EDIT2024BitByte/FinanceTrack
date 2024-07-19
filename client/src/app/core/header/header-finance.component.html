@@ -1,0 +1,17 @@
+<ng-container>
+    <c-container [fluid]="true" class="border-bottom px-4">
+        <button class="btn" style="margin-inline-start: 230px;">
+        </button>
+
+        <c-header-nav class="mx-0 header-nav-wrapper">
+            <span class="header-nav-text">{{ firstName }} {{ lastName }}</span>
+            <button (click)="logout()" class="btn btn-sm logout">
+                <i class="c-icon cil-account-logout header-nav-icon"></i>
+            </button>
+        </c-header-nav>
+
+    </c-container>
+    <c-container [fluid]="true" class="px-4">
+        <c-breadcrumb-router />
+    </c-container>
+</ng-container>

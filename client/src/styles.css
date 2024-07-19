@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: lightgrey;
+}
+
+.custom-form-field {
+  border: var(--cui-border-width) solid var(--cui-border-color);
+  border-radius: var(--cui-border-radius-lg);
+}
+
+.custom-form-field ::ng-deep .form-control:focus {
+  color: var(--cui-body-color);
+  background-color: var(--cui-body-bg) !important;
+  border-color: #acabeb !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 .25rem rgba(88, 86, 214, .25) !important;
+}
+
+.font-size-lg {
+  font-size: 1.25rem !important;
+}
+
+i {
+  cursor: pointer;
+}

@@ -1,0 +1,23 @@
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5856d6;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5856d6;
+}
+
+.input-group-prepend {
+    padding-right: 1%;
+}
+
+.i-pass-visibility{
+    cursor: pointer;
+}

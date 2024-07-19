@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Income</h1>
+<mat-dialog-content>
+  <form [formGroup]="incomeForm" (ngSubmit)="addEditIncome()">
+    <div class="form-group mt-4 row">
+      <input formControlName="amount" type="text" class="form-control form-control-lg" placeholder="Amount*">
+      <small *ngIf="incomeForm.get('amount')?.invalid && incomeForm.get('amount')?.touched" class="text-danger">
+        Amount is required and must be a valid decimal number.
+      </small>
+    </div>
+    <div class="form-group mt-4 row">
+      <input formControlName="description" type="text" class="form-control form-control-lg" placeholder="Description">
+    </div>
+    <div class="form-group mt-4 row">
+      <mat-form-field class="custom-form-field full-width">
+        <input matInput formControlName="date" [matDatepicker]="datumKreiranja" placeholder="Date*">
+        <mat-datepicker-toggle matSuffix [for]="datumKreiranja" matTooltip="Enter date"></mat-datepicker-toggle>
+        <mat-datepicker #datumKreiranja></mat-datepicker>
+      </mat-form-field>
+      <small *ngIf="incomeForm.get('date')?.invalid && incomeForm.get('date')?.touched" class="text-danger">
+        Date is required.
+      </small>
+    </div>
+    <div class="mt-4 d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary left-button">Save</button>
+      <button type="button" class="btn btn-light" (click)="dialogRef.close(false)">Cancel</button>
+    </div>
+  </form>
+  <div *ngIf="savingFailed && incomeForm.touched" class="alert alert-danger mt-3" role="alert">
+    Saving failed. Please check your data and try again.
+  </div>
+</mat-dialog-content>

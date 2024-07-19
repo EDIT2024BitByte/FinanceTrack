@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Helper\Comtrade.FinanceTrack.Helper\Comtrade.FinanceTrack.Helper.csproj" />
+    <ProjectReference Include="..\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Certificates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="System.Text.Json" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Certificates\kafkaca.pem">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

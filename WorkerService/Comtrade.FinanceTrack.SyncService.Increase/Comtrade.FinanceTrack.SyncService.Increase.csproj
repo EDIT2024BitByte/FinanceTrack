@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Comtrade.FinanceTrack.SyncService-45022cd4-73cc-4d50-b43d-5322deaba3d5</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Comtrade.FinanceTrack.Services.Increase\Comtrade.FinanceTrack.Services.Increase.csproj" />
+    <ProjectReference Include="..\Comtrade.FinanceTrack.SyncService.Inc.Init\Comtrade.FinanceTrack.SyncService.Inc.Init.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+{
+  "profiles": {
+    "Comtrade.FinanceTrack.Budget.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:40192",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true
+    }
+    //"Container (Dockerfile)": {
+    //  "commandName": "Docker",
+    //  "launchBrowser": true,
+    //  "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+    //  "environmentVariables": {
+    //    "ASPNETCORE_HTTPS_PORTS": "8081",
+    //    "ASPNETCORE_HTTP_PORTS": "8080"
+    //  },
+    //  "publishAllPorts": true,
+    //  "useSSL": true
+    //}
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:40192"
+    }
+  }
+}

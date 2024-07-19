@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Kafka\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces.csproj" />
+    <ProjectReference Include="..\..\..\Common\Mapper\Comtrade.FinanceTrack.Mapper.Budget\Comtrade.FinanceTrack.Mapper.Budget.csproj" />
+    <ProjectReference Include="..\..\..\Common\Repository\Comtrade.FinanceTrack.UnitOfWork\Comtrade.FinanceTrack.UnitOfWork\Comtrade.FinanceTrack.UnitOfWork.csproj" />
+    <ProjectReference Include="..\..\..\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.Budget\Comtrade.FinanceTrack.ViewModel.Budget.csproj" />
+    <ProjectReference Include="..\..\..\Repositories\Budget\Comtrade.FinanceTrack.Budget.Repository.MSSQL\Comtrade.FinanceTrack.Budget.Repository.MSSQL.csproj" />
+    <ProjectReference Include="..\..\..\Repositories\Budget\Comtrade.FinanceTrack.Budget.UnitOfWork\Comtrade.FinanceTrack.Budget.UnitOfWork\Comtrade.FinanceTrack.Budget.UnitOfWork.csproj" />
+    <ProjectReference Include="..\Comtrade.FinanceTrack.Budget.BusinessLogic.Abstraction\Comtrade.FinanceTrack.Budget.BusinessLogic.Abstraction.csproj" />
+  </ItemGroup>
+
+</Project>

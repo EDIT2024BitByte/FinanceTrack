@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Kafka\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces\Comtrade.FinanceTrack.Kafka.Adapter.Intefaces.csproj" />
+    <ProjectReference Include="..\..\..\Common\ViewModel\Comtrade.FinanceTrack.ViewModel.Budget\Comtrade.FinanceTrack.ViewModel.Budget.csproj" />
+  </ItemGroup>
+
+</Project>

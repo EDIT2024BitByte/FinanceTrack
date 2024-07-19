@@ -1,0 +1,47 @@
+﻿{
+  "Routes": [
+    // Comtrade.FinanceTrack.Budget.Api
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 40192
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/budgetapi/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+    },
+    // Comtrade.FinanceTrack.CashFlow.Api
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 40193
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/cashflowapi/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+    },
+    // Comtrade.FinanceTrack.User.Api
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 40194
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/userapi/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete", "Options" ]
+    }
+  ],
+  "AllowedHosts": "*",
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:10000"
+  }
+}

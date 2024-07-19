@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ViewModel\Comtrade.FinanceTrack.ViewModel.CashFlow\Comtrade.FinanceTrack.ViewModel.CashFlow.csproj" />
+    <ProjectReference Include="..\..\..\Repositories\CashFlow\Comtrade.FinanceTrack.CashFlow.Repository.MSSQL.Models\Comtrade.FinanceTrack.CashFlow.Repository.MSSQL.Models.csproj" />
+  </ItemGroup>
+
+</Project>

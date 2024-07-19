@@ -1,0 +1,38 @@
+<div class="container-fluid bg-light">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-body p-5">
+                    <h3 class="text-center mb-4">Welcome Back!</h3>
+                    <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+                        <c-input-group class="mb-3">
+                            <span cInputGroupText>
+                                <i class="c-icon cil-user"></i>
+                            </span>
+                            <input formControlName="username" type="text" autoComplete="username" cFormControl
+                                placeholder="Username" />
+                        </c-input-group>
+                        <c-input-group class="mb-4">
+                            <span cInputGroupText>
+                                <i class="c-icon cil-lock-locked"></i>
+                            </span>
+                            <input formControlName="password" [type]="showPassword ? 'text' : 'password'"
+                                autoComplete="current-password" cFormControl placeholder="Password" />
+                            <span cInputGroupText>
+                                <i class="c-icon cil-low-vision i-pass-visibility"
+                                    (click)="togglePasswordVisibility()"></i>
+                            </span>
+                        </c-input-group>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" [disabled]="loginForm.invalid">
+                            <i class="c-icon cil-sign-in-alt"></i> Login
+                        </button>
+                    </form>
+                    <!-- Login failure message -->
+                    <div *ngIf="loginFailed" class="alert alert-danger mt-3" role="alert">
+                        Login failed. Please check your username and password.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.header-nav-wrapper {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header-nav-wrapper .btn {
+    margin-left: 10px;
+}
+
+.header-nav-text {
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin-right: 10px;
+}
+
+.header-nav-icon {
+    font-size: 24px;
+}
+
+.logout {
+    background-color: #212631;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+}
+
+.logout:hover {
+    background-color: #2a303d;
+}

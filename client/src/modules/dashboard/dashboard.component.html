@@ -1,0 +1,131 @@
+<div class="dashboard-container">
+    <div class="top-container">
+        <div class="left-side">
+            <!-- Total Amount -->
+            <div class="total-amount-card">
+                <c-widget-stat-a color="info" [title]="'Total amount'" class="blueBox">
+                    <ng-template cTemplateId="widgetValueTemplate" ngPreserveWhitespaces>
+                        {{ totalAmount | number:'1.2-2' }}
+                    </ng-template>
+                    <ng-template cTemplateId="widgetActionTemplate">
+                        <div alignment="end" variant="btn-group">
+                            <i class="c-icon cil-balance-scale card-icon"></i>
+                        </div>
+                    </ng-template>
+                </c-widget-stat-a>
+            </div>
+
+            <!-- Expenses and Incomes -->
+            <div class="expenses-incomes">
+                <!-- Incomes -->
+                <div class="incomes-card">
+                    <c-widget-stat-a color="success" [title]="'Income'" class="greenBox">
+                        <ng-template cTemplateId="widgetValueTemplate" ngPreserveWhitespaces>
+                            {{ totalIncome | number:'1.2-2' }}
+                        </ng-template>
+                        <ng-template cTemplateId="widgetActionTemplate">
+                            <div alignment="end" variant="btn-group">
+                                <i class="c-icon cil-vertical-align-bottom card-icon-small"></i>
+                            </div>
+                        </ng-template>
+                    </c-widget-stat-a>
+                </div>
+
+                <!-- Expenses -->
+                <div class="expenses-card">
+                    <c-widget-stat-a color="danger" [title]="'Expense'" class="redBox">
+                        <ng-template cTemplateId="widgetValueTemplate" ngPreserveWhitespaces>
+                            {{ totalExpense | number:'1.2-2' }}
+                        </ng-template>
+                        <ng-template cTemplateId="widgetActionTemplate">
+                            <div alignment="end" variant="btn-group">
+                                <i class="c-icon cil-vertical-align-top card-icon-small"></i>
+                            </div>
+                        </ng-template>
+                    </c-widget-stat-a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <table [hover]="true" [responsive]="true" [striped]="true" align="middle" cTable class="mb-0 border test">
+                <thead class="text-nowrap text-truncate">
+                    <tr>
+                        <th class="bg-body-tertiary">Amount</th>
+                        <th class="bg-body-tertiary">Date</th>
+                        <th class="bg-body-tertiary">Description</th>
+                        <th class="bg-body-tertiary">Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let row of tableData; let i = index">
+                        <td>{{ row.amount | number:'1.2-2' }}</td>
+                        <td>{{ row.date | date: 'dd.MM.yyyy' }} </td>
+                        <td>{{ row.description }}</td>
+                        <td [ngClass]="{'success': row.incomeExpenseFlag === 1, 'danger': row.incomeExpenseFlag === 0}">
+                            {{ row.incomeExpenseFlag === 1 ? 'Income' : 'Expense' }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Week Chart -->
+    <div class="middle-container">
+        <c-card sm="12" class="wChart">
+            <c-card-body>
+                <c-chart [data]="weekExpense$ | async" [options]="chartOptions" [height]="300"
+                    [ngStyle]="{ 'marginTop.px': 40 }" type="bar" (chartRef)="handleChartRef($event)">
+                </c-chart>
+            </c-card-body>
+        </c-card>
+    </div>
+    <!-- Date range and categories Chart -->
+    <div class="bottom-container">
+
+        <!-- Date Range Input and Categories -->
+        <div class="row">
+            <!-- Date Range Input -->
+            <div class="col-lg-5">
+                <div class="date-range-container">
+                    <form [formGroup]="dateForm">
+                        <mat-form-field class="mat-form-field custom-date-input custom-form-field full-width">
+                            <mat-label>Enter a date range</mat-label>
+                            <mat-date-range-input [rangePicker]="picker">
+                                <input matStartDate formControlName="startDate" placeholder="Start date">
+                                <input matEndDate formControlName="endDate" placeholder="End date">
+                            </mat-date-range-input>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-date-range-picker #picker (closed)="onDatePickerClosed()"></mat-date-range-picker>
+                        </mat-form-field>
+                    </form>
+                </div>
+
+                <!-- Categories Section -->
+                <div class="categories-container">
+                    <c-card [cBorder]="{top: {color: 'light', width: 3}}" textColor="dark" class="mb-3">
+                        <c-card-header>Expense category</c-card-header>
+                        <c-card-body>
+                            <c-row>
+                                <c-col [lg]="6" *ngFor="let row of categories">
+                                    <mat-checkbox class="category-checkbox"
+                                        (change)="updateChartData(row.id, $event.checked)">{{ row.name
+                                        }}</mat-checkbox>
+                                </c-col>
+                            </c-row>
+                        </c-card-body>
+                    </c-card>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                <div class="charts-container">
+                    <c-chart class="c-chart custom-chart" [data]="expense$ | async" type="doughnut"></c-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

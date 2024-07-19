@@ -1,0 +1,12 @@
+﻿
+// Create migration
+Add-Migration -Project Comtrade.FinanceTrack.Budget.Repository.MSSQL -Name TODO -Context BudgetContext -StartupProject Comtrade.FinanceTrack.Budget.Api
+
+// Update database
+Update-Database -Project  Comtrade.FinanceTrack.Budget.Repository.MSSQL -Context BudgetContext -StartupProject Comtrade.FinanceTrack.Budget.Api
+
+//debbuger
+if (System.Diagnostics.Debugger.IsAttached == false) System.Diagnostics.Debugger.Launch();
+
+// EF Core 6 - history 
+https://devblogs.microsoft.com/dotnet/prime-your-flux-capacitor-sql-server-temporal-tables-in-ef-core-6-0/
