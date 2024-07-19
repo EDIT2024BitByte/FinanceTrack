@@ -1,0 +1,220 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\EDIT2024\\Common\\Mapper\\Comtrade.FinanceTrack.Mapper.User\\Comtrade.FinanceTrack.Mapper.User.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\EDIT2024\\Common\\Mapper\\Comtrade.FinanceTrack.Mapper.User\\Comtrade.FinanceTrack.Mapper.User.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\EDIT2024\\Common\\Mapper\\Comtrade.FinanceTrack.Mapper.User\\Comtrade.FinanceTrack.Mapper.User.csproj",
+        "projectName": "Comtrade.FinanceTrack.Mapper.User",
+        "projectPath": "C:\\Projects\\EDIT2024\\Common\\Mapper\\Comtrade.FinanceTrack.Mapper.User\\Comtrade.FinanceTrack.Mapper.User.csproj",
+        "packagesPath": "C:\\Users\\btodorovic\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\EDIT2024\\Common\\Mapper\\Comtrade.FinanceTrack.Mapper.User\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\btodorovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\Comtrade.FinanceTrack.ViewModel.User.csproj": {
+                "projectPath": "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\Comtrade.FinanceTrack.ViewModel.User.csproj"
+              },
+              "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.csproj": {
+                "projectPath": "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\Comtrade.FinanceTrack.ViewModel.User.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\Comtrade.FinanceTrack.ViewModel.User.csproj",
+        "projectName": "Comtrade.FinanceTrack.ViewModel.User",
+        "projectPath": "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\Comtrade.FinanceTrack.ViewModel.User.csproj",
+        "packagesPath": "C:\\Users\\btodorovic\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\EDIT2024\\Common\\ViewModel\\Comtrade.FinanceTrack.ViewModel.User\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\btodorovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.csproj",
+        "projectName": "Comtrade.FinanceTrack.User.Repository.MSSQL.Models",
+        "projectPath": "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.csproj",
+        "packagesPath": "C:\\Users\\btodorovic\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\EDIT2024\\Repositories\\User\\Comtrade.FinanceTrack.User.Repository.MSSQL.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\btodorovic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

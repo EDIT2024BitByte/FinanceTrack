@@ -1,0 +1,17 @@
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.deps.json
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.dll
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.pdb
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.dll
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.dll
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.ViewModel.User.pdb
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\bin\Debug\net8.0\Comtrade.FinanceTrack.User.Repository.MSSQL.Models.pdb
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.csproj.AssemblyReference.cache
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.AssemblyInfoInputs.cache
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.AssemblyInfo.cs
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.csproj.CoreCompileInputs.cache
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.947F519F.Up2Date
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.dll
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\refint\Comtrade.FinanceTrack.Mapper.User.dll
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\Comtrade.FinanceTrack.Mapper.User.pdb
+C:\Projects\EDIT2024\Common\Mapper\Comtrade.FinanceTrack.Mapper.User\obj\Debug\net8.0\ref\Comtrade.FinanceTrack.Mapper.User.dll
